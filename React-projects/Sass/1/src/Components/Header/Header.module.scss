@@ -1,0 +1,32 @@
+@use '../utils';
+@use '../variables';
+
+.header {
+    @include utils.flex-between-center(row, 1rem);
+    
+    background-color: rgb(205, 228, 249);
+    box-shadow:0px 0px 6px 2px #ccc;
+    padding: 1rem;
+    position:sticky;
+    top:0;
+    z-index:1;
+
+    >div{
+        @include utils.flex-center(row,1rem);
+    }
+
+    .nav {
+        ul {
+            @include utils.flex-layout(row, center, center);
+            list-style: none;
+        }
+    }
+}
+
+.loginBtn {
+   @include utils.button-style(variables.$color-button-primary, variables.$color-font-primary)
+}
+
+.signupBtn{
+    @include utils.button-style(variables.$color-button-secondary, variables.$color-font-secondary)
+}

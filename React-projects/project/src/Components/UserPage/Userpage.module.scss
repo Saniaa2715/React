@@ -1,0 +1,28 @@
+.header{
+    padding:1rem;
+    border-bottom:thin solid black;
+}
+
+.main{
+    min-height:50vh;
+    display:grid;
+    grid-template-columns: repeat(4,3fr);
+
+    padding:1rem;
+}
+
+
+.footer{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    padding:1rem;
+    border-top:thin solid solid;
+}
+
+.uploadFile input{
+    display:none;
+}

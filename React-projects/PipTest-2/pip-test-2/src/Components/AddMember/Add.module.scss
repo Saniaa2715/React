@@ -1,0 +1,36 @@
+@use '../buttons';
+
+.modalContainer{
+    // background-color: transparent;
+    background-color: beige;
+
+    display:grid;
+    place-items:center;
+
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    padding:1rem; 
+    border:thin solid black;   
+    background:transparent;
+}
+
+.modalContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.modalContent input {
+    padding:0.25rem 1rem;
+    outline:none;
+
+}
+
+.uploadBtn{
+    @include buttons.button_styles;
+}

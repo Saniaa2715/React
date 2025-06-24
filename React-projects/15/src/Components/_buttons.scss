@@ -1,0 +1,14 @@
+
+@mixin button_styles{
+    color:beige;
+    background-color: brown;
+
+    padding:0.5rem 1rem;
+    border:thin solid black;
+    border-radius:4px;
+
+    &:hover{
+        color:brown;
+        background-color: burlywood;
+    }
+}

@@ -1,0 +1,139 @@
+Great! You're heading toward a more structured and dynamic setup.
+
+Let's break this down step-by-step based on your **2 goals**:
+
+---
+
+### ✅ GOAL 1: **Use `useEffect` to fetch data from `data.ts`**
+
+Even though you're importing the data directly, if you want to **simulate fetching** (like from an API or localStorage), you can use `useEffect` for that purpose.
+
+Since `todoTasks` is static, we can still "fetch" it once and initialize state cleanly.
+
+---
+
+### ✅ GOAL 2: **When clicked on "Completed", task should move to completed side**
+
+You're already toggling `isCompleted`, so the second goal is almost complete — you just need a visual separation (which you already have), and the `toggleTask` is correctly updating the status.
+
+---
+
+## ✅ Final Refactored Code with `useEffect` and Clean Toggle
+
+```tsx
+import styles from './Main.module.scss';
+import { useState, useEffect } from 'react';
+import { todoTasks, todoData } from '../../data';
+
+export const Main = () => {
+    const [tasks, setTasks] = useState<todoData[]>([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    // Fetch the initial tasks once
+    useEffect(() => {
+        setTasks(todoTasks); // Simulate fetch
+    }, []);
+
+    const handleAdd = () => {
+        let nextIndex = currentIndex;
+        while (nextIndex < tasks.length && tasks[nextIndex].isCompleted) {
+            nextIndex++;
+        }
+        if (nextIndex < tasks.length) {
+            setCurrentIndex(nextIndex + 1);
+        }
+    };
+
+    const toggleTask = (id: number) => {
+        const updatedTasks = tasks.map(task =>
+            task.id === id ? { ...task, isCompleted: !task.isCompleted } : task
+        );
+        setTasks(updatedTasks);
+    };
+
+    const currentTask = tasks[currentIndex - 1];
+    const pendingTasks = tasks.filter(task => !task.isCompleted);
+    const completedTasks = tasks.filter(task => task.isCompleted);
+
+    return (
+        <main className={styles.main}>
+            <div className={styles.action}>
+                <button className={styles.btn} onClick={handleAdd}>ADD</button>
+
+                {currentTask && (
+                    <div className={styles.item}>
+                        <h2>{currentTask.taskName}</h2>
+                        <button
+                            className={styles.btn}
+                            onClick={() => toggleTask(currentTask.id)}
+                        >
+                            {currentTask.isCompleted ? 'Pending' : 'Completed'}
+                        </button>
+                    </div>
+                )}
+            </div>
+
+            <section className={styles.taskLists}>
+                <h3>Pending Tasks</h3>
+                {pendingTasks.map(task => (
+                    <div className={styles.item} key={task.id}>
+                        <h2>{task.taskName}</h2>
+                        <div className={styles.btnList}>
+                            <button
+                                className={`${styles.btn} ${styles.toggleBtn}`}
+                                onClick={() => toggleTask(task.id)}
+                            >
+                                Completed
+                            </button>
+                        </div>
+                    </div>
+                ))}
+
+                <h3>Completed Tasks</h3>
+                {completedTasks.map(task => (
+                    <div className={styles.item} key={task.id}>
+                        <h2>{task.taskName}</h2>
+                        <div className={styles.btnList}>
+                            <button
+                                className={`${styles.btn} ${styles.toggleBtn}`}
+                                onClick={() => toggleTask(task.id)}
+                            >
+                                Pending
+                            </button>
+                        </div>
+                    </div>
+                ))}
+            </section>
+        </main>
+    );
+};
+```
+
+---
+
+### 🔁 About Duplicate IDs in `todoTasks`
+
+Your `data.ts` has some duplicate `id`s (`5` is used three times). This can cause **React rendering issues**.
+
+#### ✅ Fix:
+```ts
+export const todoTasks: todoData[] = [
+    { id: 1, taskName: "Get Up", isCompleted: false },
+    { id: 2, taskName: "Workout", isCompleted: false },
+    { id: 3, taskName: "Breakfast", isCompleted: false },
+    { id: 4, taskName: "Leave for Work", isCompleted: false },
+    { id: 5, taskName: "Meeting", isCompleted: false },
+    { id: 6, taskName: "Lunch", isCompleted: false },
+    { id: 7, taskName: "Coding", isCompleted: false },
+];
+```
+
+---
+
+### Want to add?
+
+- Animations when tasks move?
+- Limit to showing only one completed/pending section?
+- Add/Delete functionality?
+
+Let me know how far you want to go with it!

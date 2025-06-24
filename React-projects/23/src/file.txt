@@ -1,0 +1,13 @@
+components
+functional and class
+in class why we extends component(inheritance)
+
+
+module
+why className
+
+#root{
+    min-height:100vh;
+    display:grid;
+    grid-template-columns:auto 1fr auto;
+}

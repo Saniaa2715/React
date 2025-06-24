@@ -1,0 +1,33 @@
+
+.userContainer{
+    padding:1rem;
+    // border-right:thin solid black;
+
+    display: flex;
+    // // flex-direction: column;
+    // justify-content: start;
+    // align-items: center;
+    // gap:1rem;
+}
+
+.userList{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.eachUser{
+    list-style: none;
+
+    color:brown;
+    background-color: beige;
+
+    padding:0.5rem;
+    border:thin solid black;
+
+    cursor:pointer;
+
+    &:hover{
+        background-color: rgb(235, 213, 186);
+    }
+}

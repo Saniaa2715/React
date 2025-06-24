@@ -1,0 +1,51 @@
+
+@use '../utils';
+@use '../variables';
+
+
+.Card{
+    @include utils.flex-center(column,1rem);
+    background-color: beige;
+    padding:0.5rem;
+    border:2px solid black;
+    // box-shadow:0px 0px 2px 6px variables.$color-bg-main;
+    // border-radius:10px;
+
+    img{
+        width:100%;
+        // border-radius:4px;
+        // border:thin solid black;
+    }
+}
+
+.content{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:1rem;
+    padding:1rem 2rem;
+    // border:thin solid black;
+
+    h3,p{
+        text-align: center;
+    }
+}
+
+.greeting{
+    @include utils.flex-center(column,1rem)
+}
+
+.main{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+    padding:1rem;
+}
+
+.exploreBtn{
+    @include utils.button-style(variables.$color-button-secondary, variables.$color-font-secondary);
+}
+
+// .cardText{
+//     // border:thin solid black;
+// }

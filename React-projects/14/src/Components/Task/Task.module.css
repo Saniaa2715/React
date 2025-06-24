@@ -1,0 +1,34 @@
+.taskLists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.item {
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border: thin solid black;
+}
+
+.btn {
+  color: beige;
+  background-color: brown;
+  padding: 0.5rem 1rem;
+  border: thin solid black;
+  border-radius: 4px;
+}
+.btn:hover {
+  color: brown;
+  background-color: burlywood;
+}
+
+.btnList {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=Task.module.css.map */

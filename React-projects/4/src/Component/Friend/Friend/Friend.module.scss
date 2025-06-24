@@ -1,0 +1,12 @@
+.intro{
+    background-color: lavender;
+    border:thin solid black;
+
+    padding:1rem;
+
+  
+    &:hover{
+        background-color: rgb(231, 151, 231);
+        transform: scale(1.2);
+    }
+}

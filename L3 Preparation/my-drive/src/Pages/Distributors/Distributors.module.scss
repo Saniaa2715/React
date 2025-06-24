@@ -1,0 +1,27 @@
+/* Styles for Distributors */ 
+
+
+.DistributorsPage{
+    display:grid;
+    grid-template-rows: 1fr 5fr;
+
+    .Operations{
+        display:flex;
+        justify-content: space-between;
+
+        padding:1rem;
+    }
+
+    .CardContainer{
+        display:grid;
+        grid-template-columns: repeat(3,2fr);
+
+        padding:1rem;
+
+        .CardContent{
+            display:flex;
+            flex-direction: column;
+            
+        }
+    }
+}

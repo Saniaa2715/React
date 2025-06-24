@@ -1,0 +1,48 @@
+.page.login {
+    min-height: 100dvh;
+    display: grid;
+    place-items: center;
+}
+
+.login-form-container {
+    /* color:white; */
+    background-color: beige;
+    padding: 1rem;
+    border: thin solid burlywood;
+}
+
+.login-form-container h1 {
+    text-align: center;
+}
+
+.login-form {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.login-form input {
+
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
+    border: thin solid brown;
+}
+
+.form-group {
+    padding: 0.25rem;
+}
+
+.submit-btn {
+    padding: 0.25rem 0.75rem;
+    color: brown;
+    background-color: beige;
+    border: thin solid brown;
+    border-radius: 10px;
+}
+
+.submit-btn:hover {
+    color: beige;
+    background-color: brown;
+}

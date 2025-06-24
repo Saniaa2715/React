@@ -1,0 +1,68 @@
+/* Styles for Products */ 
+
+
+.ProductsPage{
+    display:grid;
+    grid-template-rows: auto 9fr;
+
+    .ProductsOperations{
+        display:flex;
+        justify-content: space-between;
+
+        padding:1rem;
+
+        .Form{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:1rem;
+        }
+
+    }
+
+    .ProductsCardContainer{
+        display:grid;
+        grid-template-columns: repeat(4,2fr);
+        gap:0.5rem;
+
+        padding:1rem;
+
+
+        .ProductsCardContent{
+            position: relative;
+            font-size: 0.8em;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            gap:0.5rem;
+            // align-items: center;
+
+            padding:0.5rem;
+            border:thin solid black;
+
+            .Group{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            img{
+                width:50%;
+                align-self: center;
+            }
+
+            .Images{
+                display:flex;
+                flex-direction: column;
+
+                position: absolute;
+                top:0;
+                right:0;
+                // left: 0;
+                // bottom: 0;
+
+                padding:0.5rem;
+            }
+        }
+    }
+}

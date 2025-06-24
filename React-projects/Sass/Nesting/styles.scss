@@ -1,0 +1,33 @@
+$border-radius:false;
+
+
+.navbar{
+    ul{
+        //style
+        li{
+            list-style: none;
+        }
+    }
+}
+
+.button{
+    padding:0.5rem 1rem;
+    border-radius: if($border-radius, 50%,null);
+
+    &:hover{
+        background-color: black;
+        color:white;
+        cursor:pointer;
+    }
+}
+
+
+%change{
+    padding:0.5rem 1rem;
+    background-color: green;
+}
+
+
+.button{
+    @extend %change;
+}

@@ -1,0 +1,57 @@
+@use '../buttons';
+
+.Main{
+    min-height: 100vh;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 3fr 3fr 3fr;
+
+    // padding:1rem;
+}
+
+.all{
+    
+    border-right:thin solid;
+}
+
+.all h2{
+    padding:0.5rem;
+    border-bottom: thin solid;
+}
+
+.maybe{
+    border-right:thin solid;
+}
+
+.maybe h2{
+    padding:0.5rem;
+    border-bottom: thin solid;
+}
+
+.invited h2{
+    padding:0.5rem;
+    border-bottom: thin solid;
+}
+
+.dataItem{
+    // width:90%;
+    // width:25rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding:1rem;
+    // border:thin solid black;
+}
+
+.btnList{
+    display:flex;
+    gap:20px;
+
+    padding:1rem;
+}
+
+.btn{
+    @include buttons.button_styles;
+}

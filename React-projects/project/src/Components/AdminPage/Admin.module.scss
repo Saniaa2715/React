@@ -1,0 +1,64 @@
+
+@use '../buttons';
+
+.header{
+    display: flex;
+    gap:20px;
+
+    padding:1rem;
+    border-bottom:thin solid black;
+}
+
+.main{
+    min-height:100vh;
+    display:flex;
+    justify-content: space-between;
+    // align-items: center;
+
+    padding:1rem;
+}
+
+.userData{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+}
+
+
+// Table Styling
+
+th,td{
+    padding:0.25rem;
+    border:thin solid;
+    // width:100%;
+}
+
+th{
+    background-color: beige;
+    width:90%;
+}
+
+table{
+    margin:2rem;
+}
+
+th, td{
+    width:30%;
+    padding: 0.5rem;
+    text-align: center;
+    border:thin solid;
+}
+
+th{
+    background-color: antiquewhite;
+}
+
+.btn{
+    @include buttons.button_styles;
+}
+
+.action{
+    display:flex;
+    gap:20px;
+}
+

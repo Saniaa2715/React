@@ -1,0 +1,6 @@
+
+    //useReducers will take two things 
+    //a reducer function and an initialValue
+
+    //The reducer function will take two parameters 
+    //intent and data to perform the intent on

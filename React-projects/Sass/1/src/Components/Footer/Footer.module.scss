@@ -1,0 +1,26 @@
+@use '../utils';
+@use '../variables';
+@use 'sass:list';
+@use 'sass:map';
+
+$button-classes:'primary','secondary', 'tertiary', 'quarternary';
+$btn-colors:(
+    'primary':red,
+    'secondary':yellow,
+    'tertairy':green,
+    'quarternary':blue
+);
+
+.footer{
+    @include utils.flex-between-center;
+    color:variables.$color-font-primary;
+    background-color: variables.$color-button-primary;
+    padding:1rem;
+
+    @each $btn in $button-classes{
+        .btn-#{$btn}{
+            padding:2rem;
+            background-color: map.get($btn-colors, $btn)
+        }
+    }
+}

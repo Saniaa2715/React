@@ -1,0 +1,17 @@
+.navbar ul li {
+  list-style: none;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+}
+.button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  background-color: green;
+}/*# sourceMappingURL=styles.css.map */

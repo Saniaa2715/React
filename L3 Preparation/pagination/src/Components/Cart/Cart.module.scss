@@ -1,0 +1,40 @@
+/* Styles for Cart */
+
+
+.CardContainer {
+    font-size:0.8em;
+    display: flex;
+    // grid-template-columns: repeat(3, 2fr);
+    justify-content: center;
+
+    // align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    .CardColumn {
+        display: flex;
+        flex-direction: column;
+
+        gap: 1rem;
+
+        .CardContent {
+            min-height: 200px;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            padding: 1rem;
+            box-shadow: 0px 0px 2px 2px #ccc;
+
+            img{
+                width:100px;
+            }
+        }
+
+
+    }
+
+
+}

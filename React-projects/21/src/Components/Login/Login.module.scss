@@ -1,0 +1,39 @@
+/* Styles for Login */ 
+
+
+.main{
+    min-height:100vh;
+
+    display:grid;
+    place-items: center;
+    
+}
+
+.loginContainer{
+
+
+
+    padding:1rem;
+    border:thin solid black;
+}
+
+.form{
+        display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+}
+input{
+    padding:0.25rem 1rem;
+    outline:none;
+}
+
+.btn{
+    padding:0.5rem 1rem;
+    border:thin solid black;
+
+    &:hover{
+        color:white;
+        background-color: black;
+    }
+}

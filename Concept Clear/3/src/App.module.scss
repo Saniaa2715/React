@@ -1,0 +1,18 @@
+
+
+.WeatherContainer{
+    min-height: 100vh;
+    display:grid;
+    place-items: center;
+
+    .WeatherContent{
+        padding:1rem;
+        border:thin solid black;
+
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+    }
+}

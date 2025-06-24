@@ -1,0 +1,37 @@
+.instalite{
+    min-height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page{
+    display:grid;
+    grid-template-columns: repeat(3,3fr);
+    gap:1rem;
+}
+
+.container{
+    background-color: aquamarine;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+
+    padding:1rem;
+
+    border:thin solid black;
+}
+
+.btn{
+    color:brown;
+    background-color: beige;
+
+    padding:0.5rem 1rem;
+    border:thin solid black;
+    border-radius:4px;
+
+    &:hover{
+        color:beige;
+        background-color: brown;
+    }
+}

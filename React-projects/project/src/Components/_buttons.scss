@@ -1,0 +1,12 @@
+@mixin button_styles{
+    color:white;
+    background-color: black;
+
+    padding:0.25rem 0.75rem;
+    border:thin solid black;
+    border-radius:4px;
+    
+    &:active{
+        transform: translate(1px,1px);
+    }
+}

@@ -1,0 +1,51 @@
+import React, { useState } from 'react';
+import styles from './styles.module.css'; // Import your CSS module
+
+const TodoList = ({ todoTasks, addTodoTask }) => {
+  const [index, setIndex] = useState(0);
+
+  const handlePending = () => {
+    setIndex(prevIndex => (prevIndex + 1) % todoTasks.length); // Cycle through tasks
+  };
+
+  const handleChange = () => {
+    // Implement logic to toggle task completion status
+  };
+
+  const handleUp = () => {
+    // Implement logic to move task up in the list
+  };
+
+  const handleDown = () => {
+    // Implement logic to move task down in the list
+  };
+
+  const task = todoTasks[index];
+
+  return (
+    <div>
+      {task && (
+        <div className={styles.item}>
+          <h2>{task.taskName}</h2>
+          <div className={styles.btnList}>
+            <button
+              className={`${styles.btn} ${styles.toggleBtn}`}
+              onClick={handleChange}
+            >
+              {task.isCompleted ? 'Pending' : 'Completed'}
+            </button>
+            <button className={styles.btn} onClick={handleUp}>
+              Up
+            </button>
+            <button className={styles.btn} onClick={handleDown}>
+              Down
+            </button>
+          </div>
+        </div>
+      )}
+      <button onClick={handlePending}>Next Task</button> 
+    </div>
+  );
+};
+
+export default TodoList;

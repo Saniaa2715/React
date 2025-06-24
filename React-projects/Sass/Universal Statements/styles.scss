@@ -1,0 +1,12 @@
+$font-weight:900; //Variable in scss
+
+//Universal Statements
+
+.container{
+    padding:0.5rem 1rem;
+    font-weight:$font-weight; 
+    
+}
+
+//Single line comments=> silent comments(not visible in css)
+//Multi-line comments=>Loud comments (visible in css)

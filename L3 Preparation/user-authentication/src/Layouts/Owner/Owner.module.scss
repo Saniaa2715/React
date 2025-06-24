@@ -1,0 +1,24 @@
+/* Styles for Owner */ 
+
+.OwnerPage{
+    min-height: 100vh;
+  
+    display:grid;
+    grid-template-rows: 1fr 6fr;
+
+    .Main{
+          
+        display:grid;
+        grid-template-columns: 2fr 6fr;
+
+        .LeftSide{
+            display:flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            padding:1rem;
+            border-right:thin solid black;
+
+        }
+    }
+}

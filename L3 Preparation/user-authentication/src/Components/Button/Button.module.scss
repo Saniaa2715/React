@@ -1,0 +1,63 @@
+/* Styles for Button */ 
+
+.SecondaryBtn{
+    // color:#F08080;
+    color:white;
+    background-color: #7C0A02;
+
+    padding:0.5rem 1.25rem;
+    border: thin solid;
+    border-radius: 10px;
+
+    &:hover{
+        color:#7C0A02;
+        background-color: #F08080;
+    }
+
+    &:active{
+        position: relative;
+        top:1px;
+        left:1px;
+    }
+}
+
+.PrimaryBtn{
+    // color:#008080;
+    color:black;
+    background-color: #81D8D0;
+
+    padding:0.5rem 1.25rem;
+    border: thin solid;
+    border-radius: 10px;
+
+    &:hover{
+        color:#81D8D0;
+        background-color: #008080;
+    }
+
+    &:active{
+        position: relative;
+        top:1px;
+        left:1px;
+    }
+}
+
+.DefaultBtn{
+    color:#9A49E6;
+    background-color: #D0ACF2;
+
+    padding:0.5rem 1.25rem;
+    border: thin solid;
+    border-radius: 10px;
+
+    &:hover{
+        color:#D0ACF2;
+        background-color: #9A49E6;
+    }
+
+    &:active{
+        position: relative;
+        top:1px;
+        left:1px;
+    }
+}

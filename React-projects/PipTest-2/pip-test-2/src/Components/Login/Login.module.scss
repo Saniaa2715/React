@@ -1,0 +1,38 @@
+@use '../buttons';
+
+.loginContainer{
+    // // display:none;
+    position: absolute;
+    top:50%;
+    left:50%;
+    background-color: beige;
+    display:grid;
+    place-items: center;
+
+    padding:1rem;
+
+    transform: translate(-50%,-50%);
+    border:thin solid black;
+}
+
+.formData{
+    display:flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    padding:1rem;
+}
+
+.formData input{
+    padding:0.25rem 1rem;
+    border:thin solid black;
+    outline:none;
+    cursor: pointer
+}
+
+.submitBtn{
+    @include buttons.button_styles;
+}
+

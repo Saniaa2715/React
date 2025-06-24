@@ -1,0 +1,47 @@
+/* Styles for Modal */
+
+
+.ModalContainer {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ModalContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        z-index: 1000;
+
+        // position: relative;
+
+        padding: 1rem;
+        border: thin solid black;
+        background: white;
+        border-radius: 8px;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+
+        .CloseBtn {
+            position: absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+    }
+}

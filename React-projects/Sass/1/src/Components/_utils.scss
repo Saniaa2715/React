@@ -1,0 +1,51 @@
+@mixin flex-layout($flex-direction:row,$justify-content:center,$align-items:center,$gap:1rem){
+    display:flex;
+    flex-direction:$flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    gap: $gap;
+}
+
+@mixin flex-between-center($direction:row, $gap:0rem){
+    @include flex-layout($direction, space-between, center, $gap)
+}
+
+@mixin flex-center($direction:row, $gap:0rem){
+    @include flex-layout($direction, center, center, $gap)
+}
+
+@mixin flex-start($direction:row, $gap:0rem){
+    @include flex-layout($direction,flex-start,center,$gap )
+}
+
+@mixin flex-end($direction:row, $gap:0rem){
+    @include flex-layout($direction,flex-end,center,$gap )
+}
+
+@mixin flex-around($direction:row, $gap:0rem){
+    @include flex-layout($direction,space-around,center,$gap )
+}
+
+@mixin button-style($background-color:white,$color:black){
+    background-color: $background-color;
+    color:$color;
+    padding:0.5rem 1rem;
+    border:thin solid black;
+    border-radius:4px;
+
+    &:hover{
+        background-color: darken($color: $background-color, $amount:10%);
+    }
+
+    &:active{
+        transform:translate(1px,1px);
+    }
+}
+
+
+//Mixins vs functions
+
+
+@mixin grid-layout($divisions:1,$gap){
+
+}
