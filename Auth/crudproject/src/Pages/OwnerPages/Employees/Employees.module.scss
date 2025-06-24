@@ -1,0 +1,37 @@
+/* Styles for Employees */ 
+
+/* Styles for Facilities */ 
+
+
+.EmployeesPage{
+    // min-height: 100vh;
+    display:grid;
+    grid-template-rows: 1fr auto;
+
+    .EmployeesOperations{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+        // padding:1rem;
+    }
+
+    .EmployeesCardContainer{
+        font-size:0.80em;
+        display:grid;
+        grid-template-columns: repeat(3,2fr);
+        gap:1rem;
+
+        padding:0.5rem;
+
+        .EmployeesCardContent{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding:1rem;
+            border:thin solid black;
+        }
+    }
+}

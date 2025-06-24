@@ -1,0 +1,21 @@
+/* Styles for Login */ 
+
+.Main{
+    min-height: 100vh;
+
+    display:grid;
+    place-items: center;
+
+    .LoginContainer{
+        background-color: whitesmoke;
+        
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+
+        padding:1rem;
+        border:thin solid black;
+    }
+}

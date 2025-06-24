@@ -1,0 +1,64 @@
+/* Styles for Modal */
+
+.ModalContainer {
+    z-index: 1000;
+    min-height: 100vh;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .ModalContent {
+
+        background-color: #B8CFCE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        // .Main{
+        //     display:flex;
+        //     flex-direction: column;
+        //     gap:1rem;
+        // }
+        padding: 1rem;
+        border: thin solid black;
+
+        position: relative;
+
+        .Footer {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            position: absolute;
+            top: 0;
+            // left:0;
+            right: 0;
+
+            .btn {
+                background-color: transparent;
+                border:none; 
+            }
+
+
+            img {
+                width: 20px; //Used pixel here because my image size was either becoming too large or too short
+
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+        }
+    }
+}

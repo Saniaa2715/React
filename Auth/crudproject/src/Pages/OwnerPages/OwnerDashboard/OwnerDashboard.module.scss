@@ -1,0 +1,54 @@
+/* Styles for OwnerDashboard */
+
+.DashboardPage {
+
+    // font-size: 1em;;
+    .DashboardCardContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 1rem;
+
+
+        .topDemandedTools {
+            background-color: #ACE1AF;
+            // background-color: linear-gradient(45deg,#6495ED,#87CEFA);
+        }
+
+        .topBrokenTools {
+            background-color: #D0F0C0;
+            // background-color: linear-gradient(#B0C4DE,#7B68EE);
+        }
+
+        .topPricedTools {
+            background-color: #71BC78;
+            // background-color: linear-gradient();
+        }
+
+        .CardHolder {
+            min-height: 50vh;
+            text-align: center;
+
+            padding: 1rem;
+            // border: thin solid black;
+            box-shadow: 0px 0px 2px 2px #ccc;
+            border-radius: 10px;
+
+           
+
+            .CardContent {
+                // display:flex;
+                font-size: 0.8em;
+                padding: 1rem;
+                margin: 0.25rem;
+                border: thin solid black;
+                background-color: whitesmoke;
+
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ccc;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+/* Styles for OwnerDashboard */
+.DashboardPage .DashboardCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+}
+.DashboardPage .DashboardCardContainer .topDemandedTools {
+  background-color: #ACE1AF;
+}
+.DashboardPage .DashboardCardContainer .topBrokenTools {
+  background-color: #D0F0C0;
+}
+.DashboardPage .DashboardCardContainer .topPricedTools {
+  background-color: #71BC78;
+}
+.DashboardPage .DashboardCardContainer .CardHolder {
+  min-height: 50vh;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  border-radius: 10px;
+}
+.DashboardPage .DashboardCardContainer .CardHolder .CardContent {
+  font-size: 0.8em;
+  padding: 1rem;
+  margin: 0.25rem;
+  border: thin solid black;
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+.DashboardPage .DashboardCardContainer .CardHolder .CardContent:hover {
+  background-color: #ccc;
+}/*# sourceMappingURL=OwnerDashboard.module.css.map */

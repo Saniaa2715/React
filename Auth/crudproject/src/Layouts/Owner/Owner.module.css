@@ -1,0 +1,16 @@
+/* Styles for Owner */
+.OwnerContainer {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 8fr;
+}
+.OwnerContainer .Main {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+}
+.OwnerContainer .Main .LeftContentSide {
+  border-right: thin solid #ccc;
+}
+.OwnerContainer .Main .RightContentSide {
+  padding: 1rem;
+}/*# sourceMappingURL=Owner.module.css.map */

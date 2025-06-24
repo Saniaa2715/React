@@ -1,0 +1,26 @@
+/* Styles for Employees */
+/* Styles for Facilities */
+.EmployeesPage {
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+.EmployeesPage .EmployeesOperations {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.EmployeesPage .EmployeesCardContainer {
+  font-size: 0.8em;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1rem;
+  padding: 0.5rem;
+}
+.EmployeesPage .EmployeesCardContainer .EmployeesCardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border: thin solid black;
+}/*# sourceMappingURL=Employees.module.css.map */

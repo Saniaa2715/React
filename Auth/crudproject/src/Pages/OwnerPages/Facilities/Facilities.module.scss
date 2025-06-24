@@ -1,0 +1,52 @@
+/* Styles for Facilities */ 
+
+
+.FacilitiesPage{
+    // min-height: 100vh;
+    display:grid;
+    grid-template-rows: 1fr auto 1fr;
+
+    .FacilitiesOperations{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+
+        // padding:1rem;
+    }
+
+    .FacilitiesCardContainer{
+        font-size:0.80em;
+        display:grid;
+        grid-template-columns: repeat(3,2fr);
+        gap:1rem;
+
+        padding:0.5rem;
+
+        .FacilitiesCardContent{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            padding:1rem;
+            border:thin solid black;
+            position: relative;
+
+            .Images{
+                display:flex;
+                flex-direction: column;
+
+                position: absolute;
+                top:0;
+                right:0;
+
+                padding:0.5rem;
+
+                img{
+                    width:30px;
+                }
+
+            }
+        }
+    }
+}

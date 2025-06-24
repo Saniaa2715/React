@@ -1,0 +1,16 @@
+/* Styles for Button */
+
+.DefaultBtn {
+
+    color: #333446;
+    background-color:#EAEFEF;
+
+    padding: 0.5rem 1rem;
+    border: thin solid black;
+
+    &:hover {
+        color: #EAEFEF;
+        background-color: #333446;
+
+    }
+}

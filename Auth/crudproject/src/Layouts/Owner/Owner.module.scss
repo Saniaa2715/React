@@ -1,0 +1,20 @@
+/* Styles for Owner */ 
+
+.OwnerContainer{
+    min-height: 100vh;
+    display:grid;
+    grid-template-rows: 1fr 8fr ;
+
+    .Main{
+        display:grid;
+        grid-template-columns: 2fr 8fr;
+
+        .LeftContentSide{
+            border-right:thin solid #ccc;
+        }
+
+        .RightContentSide{
+            padding:1rem;
+        }
+    }
+}
